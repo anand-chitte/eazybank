@@ -7,12 +7,18 @@
   <groupId>com.eazybank</groupId>
   <artifactId>eazybank</artifactId>
   <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
-  <name>eazybank</name>
+    <name>eazybank</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
+    <modules>
+        <module>accounts</module>
+      <module>cards</module>
+      <module>loans</module>
+    </modules>
 
-  <properties>
+    <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
