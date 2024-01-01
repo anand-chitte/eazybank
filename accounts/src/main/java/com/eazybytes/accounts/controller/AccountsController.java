@@ -52,8 +52,7 @@ public class AccountsController {
                             schema = @Schema(implementation = ErrorResponseDto.class)
                     )
             )
-    }
-    )
+    })
     @PostMapping("/create")
     public ResponseEntity<ResponseDto> createAccount(@Valid @RequestBody CustomerDto customerDto) {
         iAccountsService.createAccount(customerDto);
